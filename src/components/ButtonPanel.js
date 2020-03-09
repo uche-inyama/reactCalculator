@@ -25,10 +25,10 @@ const ButtonPanel = () => {
   ];
 
   const names = buttonNames.map(name => (
-    <Button buttonName={name} key={name} />
+    <Button buttonName={name} key={`name_${name}`} />
   ));
   return (
-    <div>
+    <div className="ButtonPanelComponent">
       <div className="ButtonPanel">{names}</div>
     </div>
   );
