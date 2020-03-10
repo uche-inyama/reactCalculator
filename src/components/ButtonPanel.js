@@ -23,13 +23,26 @@ const ButtonPanel = () => {
     '.',
     '=',
   ];
-
-  const names = buttonNames.map(name => (
-    <Button buttonName={name} key={`name_${name}`} />
-  ));
   return (
     <div className="ButtonPanelComponent">
-      <div className="ButtonPanel">{names}</div>
+      <div className="ButtonPanel">
+        {buttonNames.map(name => (
+          <Button
+            buttonName={name}
+            key={`name_${name}`}
+            wide={name === '0'}
+            color={
+              name !== '+'
+              && name !== '-'
+              && name !== 'x'
+              && name !== '÷'
+              && name !== '='
+                ? '#d3d3d3'
+                : 'orange'
+            }
+          />
+        ))}
+      </div>
     </div>
   );
 };

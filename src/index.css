@@ -4,11 +4,9 @@
   grid-auto-rows: 100px;
 }
 
-.ButtonPanel div:nth-child(17) {
-  grid-column: 1 / span 2;
-}
 .app {
   width: 700px;
+  margin: 0 auto;
 }
 
 .displayComponent {
@@ -19,6 +17,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: orange;
   border: solid black 0.5px;
 }
