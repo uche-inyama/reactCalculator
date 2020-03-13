@@ -7,7 +7,6 @@ const App = () => (
   <div className="app">
     <Display result="" />
     <ButtonPanel />
-    <Calculate />
   </div>
 );
 
