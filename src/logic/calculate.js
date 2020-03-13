@@ -9,37 +9,29 @@ const calculate = (obj, buttonName) => {
       total: total * -1,
       next: next * -1,
     };
-  }
-  if (buttonName === '+') {
+  } if (buttonName === '+') {
     ans = operate(total, next, operation);
     return {
       ...obj,
       total: ans,
-      next,
     };
-  }
-  if (buttonName === '-') {
+  } if (buttonName === '-') {
     ans = operate(total, next, operation);
     return {
       ...obj,
       total: ans,
-      next,
     };
-  }
-  if (buttonName === '*') {
+  } if (buttonName === 'x') {
     ans = operate(total, next, operation);
     return {
       ...obj,
       total: ans,
-      next,
     };
-  }
-  if (buttonName === '÷') {
+  } if (buttonName === '÷') {
     ans = operate(total, next, operation);
     return {
       ...obj,
       total: ans,
-      next,
     };
   }
 };

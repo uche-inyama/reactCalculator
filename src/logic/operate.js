@@ -1,15 +1,15 @@
-import Bigjs from 'big-js';
+import Big from 'big-js';
 
 const operate = (numberOne, numberTwo, operation) => {
   switch (operation) {
     case '+':
-      return numberOne + numberTwo;
+      return Big(numberOne) + Big(numberTwo);
     case '-':
-      return numberOne - numberTwo;
+      return Big(numberOne) - Big(numberTwo);
     case 'x':
-      return numberOne * numberTwo;
+      return Big(numberOne) * Big(numberTwo);
     case '÷':
-      return numberOne / numberTwo;
+      return Big(numberOne) / Big(numberTwo);
     default:
       return '0';
   }
