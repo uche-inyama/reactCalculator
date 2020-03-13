@@ -1,49 +1,49 @@
-import operate from "./operate";
+import operate from './operate';
 
 const calculate = (obj, buttonName) => {
   const { total, next, operation } = obj;
   let ans;
-  if (buttonName === "+/-") {
+  if (buttonName === '+/-') {
     return {
       ...obj,
       total: total * -1,
-      next: next * -1
+      next: next * -1,
     };
   }
-  if (buttonName === "+") {
+  if (buttonName === '+') {
     ans = operate(total, next, operation);
     return {
       ...obj,
-      total: ans
+      total: ans,
     };
   }
-  if (buttonName === "-") {
+  if (buttonName === '-') {
     ans = operate(total, next, operation);
     return {
       ...obj,
-      total: ans
+      total: ans,
     };
   }
-  if (buttonName === "x") {
+  if (buttonName === 'x') {
     ans = operate(total, next, operation);
     return {
       ...obj,
-      total: ans
+      total: ans,
     };
   }
-  if (buttonName === "÷") {
+  if (buttonName === '÷') {
     ans = operate(total, next, operation);
     return {
       ...obj,
-      total: ans
+      total: ans,
     };
   }
 
-  if (buttonName === "%") {
+  if (buttonName === '%') {
     ans = operate(total, next, operation);
     return {
       ...obj,
-      total: ans
+      total: ans,
     };
   }
 
