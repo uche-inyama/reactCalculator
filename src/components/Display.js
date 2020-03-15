@@ -6,7 +6,7 @@ const Display = ({ result }) => (
 );
 
 Display.defaultProps = {
-  result: 'o',
+  result: '0',
 };
 
 Display.propTypes = {

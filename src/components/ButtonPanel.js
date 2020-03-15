@@ -25,9 +25,7 @@ const ButtonPanel = ({ clickHandler }) => {
     '=',
   ];
 
-  function handleClick(buttonName) {
-    return clickHandler(buttonName);
-  }
+  const handleClick = buttonName => clickHandler(buttonName);
 
   return (
     <div className="ButtonPanelComponent">

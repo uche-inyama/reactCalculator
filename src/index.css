@@ -11,7 +11,12 @@
 
 .displayComponent {
   background-color: gray;
-  height: 100px;
+  height: 70px;
+  padding: 20px 20px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.2rem;
 }
 .button {
   display: flex;
