@@ -29,8 +29,13 @@ class App extends React.Component {
   }
 
   render() {
-    const { total, next } = this.state;
-    const result = total || next;
+    const { total, next, operation } = this.state;
+    let result;
+    if (operation === null) {
+      result = total;
+    } else {
+      result = next === null ? operation : next;
+    }
     return (
       <div className="app">
         <Display result={result} />

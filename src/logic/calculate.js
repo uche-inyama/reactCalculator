@@ -6,8 +6,8 @@ const calculate = (obj, buttonName) => {
   if (buttonName === "+/-") {
     return {
       ...obj,
-      total: total * -1,
-      next: next * -1,
+      total: `${total * -1}`,
+      next: `${next * -1}`,
       operation: buttonName
     };
   }
@@ -31,7 +31,7 @@ const calculate = (obj, buttonName) => {
     };
   }
 
-  if (/[% ÷ x + -]/.test(buttonName)) {
+  if (/[%÷x+-]/.test(buttonName)) {
     return {
       ...obj,
       operation: buttonName
