@@ -1,8 +1,8 @@
-import React from "react";
-import Display from "./Display";
-import ButtonPanel from "./ButtonPanel";
+import React from 'react';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 // eslint-disable-next-line no-unused-vars
-import calculate from "../logic/calculate";
+import calculate from '../logic/calculate';
 
 class App extends React.Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class App extends React.Component {
     this.state = {
       total: null,
       next: null,
-      operation: null
+      operation: null,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -24,7 +24,7 @@ class App extends React.Component {
     this.setState({
       total: result.total,
       next: result.next,
-      operation: result.operation
+      operation: result.operation,
     });
   }
 

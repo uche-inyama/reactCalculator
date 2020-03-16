@@ -17,7 +17,6 @@ const Button = ({
       type="button"
       style={styleButton}
       onClick={() => {
-        console.log(buttonName);
         clickHandler(buttonName);
       }}
     >
