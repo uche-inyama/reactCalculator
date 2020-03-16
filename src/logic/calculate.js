@@ -15,7 +15,6 @@ const calculate = (obj, buttonName) => {
     return {
       ...obj,
       total: ans,
-      next,
     };
   }
   if (buttonName === '-') {
@@ -23,15 +22,13 @@ const calculate = (obj, buttonName) => {
     return {
       ...obj,
       total: ans,
-      next,
     };
   }
-  if (buttonName === '*') {
+  if (buttonName === 'x') {
     ans = operate(total, next, operation);
     return {
       ...obj,
       total: ans,
-      next,
     };
   }
   if (buttonName === '÷') {
@@ -39,9 +36,18 @@ const calculate = (obj, buttonName) => {
     return {
       ...obj,
       total: ans,
-      next,
     };
   }
+
+  if (buttonName === '%') {
+    ans = operate(total, next, operation);
+    return {
+      ...obj,
+      total: ans,
+    };
+  }
+
+  return obj;
 };
 
 export default calculate;

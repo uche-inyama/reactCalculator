@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 const Button = ({ buttonName, color, wide }) => {
   const styleButton = {
     backgroundColor: `${color}`,
-    // width: wide
   };
   if (wide) {
     styleButton.gridColumn = '1 / span 2';

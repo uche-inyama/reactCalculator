@@ -23,12 +23,14 @@ const ButtonPanel = () => {
     '.',
     '=',
   ];
+
   return (
     <div className="ButtonPanelComponent">
       <div className="ButtonPanel">
         {buttonNames.map(name => (
           <Button
             buttonName={name}
+            clickHandler=""
             key={`name_${name}`}
             wide={name === '0'}
             color={
