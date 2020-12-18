@@ -1,6 +1,6 @@
 ##  CALCULATOR 
 
-The goal is to practice building a web application using React. The project is a browser based calculator. Here's the [live version](https://henryreact-calculator.herokuapp.com/)
+The goal is to practice building a web application using React. The project is a browser based calculator. Here's the [live version](https://loving-curran-be09ab.netlify.app/)
 
 ## Tools and Technology used for the project
  - Node.js
