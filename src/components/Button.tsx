@@ -1,10 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ buttonName, color, wide }) => {
+interface Props {
+  buttonName: string,
+  color: string,
+  wide: boolean
+}
+
+const Button: React.FC<Props> = ({ buttonName, color, wide }) => {
   const styleButton = {
     backgroundColor: `${color}`,
+    gridColumn: ''
   };
+
   if (wide) {
     styleButton.gridColumn = '1 / span 2';
   }
@@ -18,7 +26,7 @@ const Button = ({ buttonName, color, wide }) => {
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
   wide: PropTypes.bool.isRequired,
-  color: PropTypes.string,
+  color: PropTypes.string.isRequired
 };
 
 Button.defaultProps = {
